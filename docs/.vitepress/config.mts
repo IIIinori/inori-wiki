@@ -7,13 +7,8 @@ export default defineConfig({
   base: '/inori-wiki/',
   cleanUrls: true,
   themeConfig: {
-    nav: [
-      { text: 'InoriLoot', link: 'https://iiiinori.github.io/inori-loot-wiki/' },
-      { text: 'InoriLootShop', link: 'https://iiiinori.github.io/inori-lootshop-wiki/' }
-    ],
+    nav: [],
     sidebar: [],
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/IIIinori/inori-wiki' }
-    ]
+    socialLinks: []
   }
 })
