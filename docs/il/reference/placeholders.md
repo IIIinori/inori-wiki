@@ -1,11 +1,5 @@
 # PlaceholderAPI
 
-标识：
-
-```text
-inoriloot
-```
-
 ## 变量
 
 | 变量 | 说明 |
