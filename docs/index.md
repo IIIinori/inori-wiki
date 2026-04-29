@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Inori Wiki
   text: Inori 系列插件文档入口
-  tagline: 选择需要查看的插件文档。
+  tagline: 插件获取 / 使用交流 / 问题反馈群：1042944055
 
 features:
   - title: InoriLoot
@@ -16,11 +16,3 @@ features:
     link: /ils/
     linkText: 进入 InoriLootShop 文档
 ---
-
-## 插件获取
-
-插件获取、使用交流和问题反馈可加入群聊：
-
-```text
-1042944055
-```
