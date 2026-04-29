@@ -36,14 +36,6 @@ scrap:
 | `inoriloot_battle_value` | `value` | 物品价值检测 |
 | `inoriloot_grid_size` | `size` | 网格尺寸检测 |
 
-说明：
-
-- `value` 会写入 `inoriloot_battle_value`。
-- `size` 会写入 `inoriloot_grid_size`，格式为 `宽x高`，例如 `1x2`。
-- `size: "1x1"` 会视为默认尺寸，不额外写入尺寸 NBT。
-- 物品放入仓库、保险箱或外部网格时，会优先读取 `inoriloot_grid_size`。
-- 计算价值时，InoriLoot 物品优先使用配置中的 `value`，外部物品或无定义物品会读取 `inoriloot_battle_value`。
-
 ## 钥匙
 
 带 `key` 字段的物品会被识别为钥匙。
