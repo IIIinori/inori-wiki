@@ -11,7 +11,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'InoriLoot',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '快速开始', link: '/il/' },
           { text: '主配置', link: '/il/config/main' },
@@ -48,7 +48,7 @@ export default defineConfig({
       },
       {
         text: 'InoriLootShop',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '快速开始', link: '/ils/' },
           { text: '安装', link: '/ils/start/install' },
