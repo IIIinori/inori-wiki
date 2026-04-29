@@ -5,14 +5,6 @@ hero:
   name: Inori Wiki
   text: Inori 系列插件文档入口
   tagline: 在这里选择你需要查看的 Inori 系列插件文档。
-  actions:
-    - theme: brand
-      text: InoriLoot 文档
-      link: https://iiiinori.github.io/inori-loot-wiki/
-    - theme: alt
-      text: InoriLootShop 文档
-      link: https://iiiinori.github.io/inori-lootshop-wiki/
-
 features:
   - title: InoriLoot
     details: 战利品、钥匙、掉落池、仓库、保险箱、Raid、常驻地图、队伍与撤离结算。
