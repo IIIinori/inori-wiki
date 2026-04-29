@@ -4,17 +4,6 @@
 
 玩家击杀 InoriLoot 刷怪点产生的实体时计数。Raid 和常驻地图都支持。
 
-| 条件 | 说明 |
-|---|---|
-| `scope` | `raid` 或 `persistent` |
-| `game` | Raid 地图 ID |
-| `map` | 常驻地图 ID |
-| `session` | 对局或常驻 session ID |
-| `spawner` | 刷怪点 ID |
-| `mob` | 怪物 ID |
-| `backend` | 刷怪后端，例如 `mythic` |
-| `mode` | 刷怪模式，例如 `once`、`repeating` |
-
 ```yaml
 kill_scav:
   meta:
@@ -31,9 +20,7 @@ kill_scav:
         amount: 20
 ```
 
-## `inoriloot spawner defeat`
-
-一次性刷怪点被完全清空时计数，适合 Boss 或精英事件任务。
+配置说明：
 
 | 条件 | 说明 |
 |---|---|
@@ -43,8 +30,12 @@ kill_scav:
 | `session` | 对局或常驻 session ID |
 | `spawner` | 刷怪点 ID |
 | `mob` | 怪物 ID |
-| `backend` | 刷怪后端 |
-| `mode` | 刷怪模式 |
+| `backend` | 刷怪后端，例如 `mythic` |
+| `mode` | 刷怪模式，例如 `once`、`repeating` |
+
+## `inoriloot spawner defeat`
+
+一次性刷怪点被完全清空时计数，适合 Boss 或精英事件任务。
 
 ```yaml
 defeat_factory_boss:
@@ -61,17 +52,22 @@ defeat_factory_boss:
         amount: 1
 ```
 
-## `inoriloot objective complete`
-
-玩家完成地图机关目标时计数。
+配置说明：
 
 | 条件 | 说明 |
 |---|---|
+| `scope` | `raid` 或 `persistent` |
 | `game` | Raid 地图 ID |
-| `session` | 对局 ID |
-| `objective` | 地图目标 ID |
-| `type` | 目标类型，例如 `generator`、`terminal`、`submit`、`defense` |
-| `flag` | 完成 flag |
+| `map` | 常驻地图 ID |
+| `session` | 对局或常驻 session ID |
+| `spawner` | 刷怪点 ID |
+| `mob` | 怪物 ID |
+| `backend` | 刷怪后端 |
+| `mode` | 刷怪模式 |
+
+## `inoriloot objective complete`
+
+玩家完成地图机关目标时计数。
 
 ```yaml
 start_generator:
@@ -87,3 +83,13 @@ start_generator:
       goal:
         amount: 1
 ```
+
+配置说明：
+
+| 条件 | 说明 |
+|---|---|
+| `game` | Raid 地图 ID |
+| `session` | 对局 ID |
+| `objective` | 地图目标 ID |
+| `type` | 目标类型，例如 `generator`、`terminal`、`submit`、`defense` |
+| `flag` | 完成 flag |

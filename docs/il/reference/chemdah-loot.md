@@ -4,20 +4,6 @@
 
 玩家搜索出一个战利品物品堆时触发。计数值为该物品堆数量，例如搜出 `medkit x3` 会增加 3 进度。
 
-| 条件 | 说明 |
-|---|---|
-| `type` | 外部网格类型，例如 `raid_loot_container`、`persistent_loot_container` |
-| `scope` | `raid` 或 `persistent` |
-| `session` | 对局或常驻 session ID |
-| `container` | 容器 ID |
-| `target` | 容器 ID 别名 |
-| `slot` | 物品所在槽位 |
-| `loot` | InoriLoot 物品 ID |
-| `key` | InoriLoot 钥匙 ID |
-| `rarity` | 物品品质 ID |
-| `amount` | 本堆数量 |
-| `value` | 本堆价值 |
-
 ```yaml
 find_medkit:
   meta:
@@ -32,22 +18,25 @@ find_medkit:
         amount: 3
 ```
 
-## `inoriloot container open`
-
-玩家打开战利品容器时计数。
+配置说明：
 
 | 条件 | 说明 |
 |---|---|
+| `type` | 外部网格类型，例如 `raid_loot_container`、`persistent_loot_container` |
 | `scope` | `raid` 或 `persistent` |
-| `game` | Raid 地图 ID |
-| `map` | 常驻地图 ID |
 | `session` | 对局或常驻 session ID |
 | `container` | 容器 ID |
 | `target` | 容器 ID 别名 |
-| `type` | 容器类型 |
-| `pool` | 掉落池 ID |
-| `key` | 所需钥匙 ID |
-| `airdrop` | 是否为空投容器，`true` 或 `false` |
+| `slot` | 物品所在槽位 |
+| `loot` | InoriLoot 物品 ID |
+| `key` | InoriLoot 钥匙 ID |
+| `rarity` | 物品品质 ID |
+| `amount` | 本堆数量 |
+| `value` | 本堆价值 |
+
+## `inoriloot container open`
+
+玩家打开战利品容器时计数。
 
 ```yaml
 open_weapon_crates:
@@ -65,9 +54,7 @@ open_weapon_crates:
         amount: 5
 ```
 
-## `inoriloot bringout item`
-
-玩家成功从 Raid 撤离或离开常驻地图时，对携带物品逐堆统计。计数值为物品堆数量。
+配置说明：
 
 | 条件 | 说明 |
 |---|---|
@@ -75,13 +62,16 @@ open_weapon_crates:
 | `game` | Raid 地图 ID |
 | `map` | 常驻地图 ID |
 | `session` | 对局或常驻 session ID |
-| `loot` | InoriLoot 物品 ID |
-| `key` | InoriLoot 钥匙 ID |
-| `rarity` | 品质 ID |
-| `amount` | 本堆数量 |
-| `value` | 本堆价值 |
-| `min-value` | 本堆最低价值 |
-| `max-value` | 本堆最高价值 |
+| `container` | 容器 ID |
+| `target` | 容器 ID 别名 |
+| `type` | 容器类型 |
+| `pool` | 掉落池 ID |
+| `key` | 所需钥匙 ID |
+| `airdrop` | 是否为空投容器，`true` 或 `false` |
+
+## `inoriloot bringout item`
+
+玩家成功从 Raid 撤离或离开常驻地图时，对携带物品逐堆统计。计数值为物品堆数量。
 
 ```yaml
 bringout_medkit:
@@ -99,9 +89,7 @@ bringout_medkit:
         amount: 3
 ```
 
-## `inoriloot bringout value`
-
-玩家成功从 Raid 撤离或离开常驻地图时，按本次携带物资总价值计数。
+配置说明：
 
 | 条件 | 说明 |
 |---|---|
@@ -109,11 +97,17 @@ bringout_medkit:
 | `game` | Raid 地图 ID |
 | `map` | 常驻地图 ID |
 | `session` | 对局或常驻 session ID |
-| `value` | 总价值 |
-| `stacks` | 带出格数 |
-| `units` | 带出物品总数量 |
-| `min-value` | 最低总价值 |
-| `max-value` | 最高总价值 |
+| `loot` | InoriLoot 物品 ID |
+| `key` | InoriLoot 钥匙 ID |
+| `rarity` | 品质 ID |
+| `amount` | 本堆数量 |
+| `value` | 本堆价值 |
+| `min-value` | 本堆最低价值 |
+| `max-value` | 本堆最高价值 |
+
+## `inoriloot bringout value`
+
+玩家成功从 Raid 撤离或离开常驻地图时，按本次携带物资总价值计数。
 
 ```yaml
 high_value_extract:
@@ -130,3 +124,17 @@ high_value_extract:
       goal:
         amount: 10000
 ```
+
+配置说明：
+
+| 条件 | 说明 |
+|---|---|
+| `scope` | `raid` 或 `persistent` |
+| `game` | Raid 地图 ID |
+| `map` | 常驻地图 ID |
+| `session` | 对局或常驻 session ID |
+| `value` | 总价值 |
+| `stacks` | 带出格数 |
+| `units` | 带出物品总数量 |
+| `min-value` | 最低总价值 |
+| `max-value` | 最高总价值 |

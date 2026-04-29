@@ -4,12 +4,6 @@
 
 玩家进入 Raid 对局时计数。
 
-| 条件 | 说明 |
-|---|---|
-| `game` | Raid 地图 ID |
-| `session` | 对局 ID |
-| `world` | 对局世界名 |
-
 ```yaml
 enter_factory:
   meta:
@@ -24,14 +18,17 @@ enter_factory:
         amount: 1
 ```
 
-## `inoriloot raid extract`
-
-玩家成功撤离时计数。
+配置说明：
 
 | 条件 | 说明 |
 |---|---|
 | `game` | Raid 地图 ID |
 | `session` | 对局 ID |
+| `world` | 对局世界名 |
+
+## `inoriloot raid extract`
+
+玩家成功撤离时计数。
 
 ```yaml
 daily_extract_factory:
@@ -47,9 +44,18 @@ daily_extract_factory:
         amount: 1
 ```
 
+配置说明：
+
+| 条件 | 说明 |
+|---|---|
+| `game` | Raid 地图 ID |
+| `session` | 对局 ID |
+
 ## `inoriloot raid end`
 
 玩家参与的 Raid 结束时计数。
+
+配置说明：
 
 | 条件 | 说明 |
 |---|---|
@@ -60,11 +66,6 @@ daily_extract_factory:
 ## `inoriloot persistent enter`
 
 玩家进入常驻地图时计数。
-
-| 条件 | 说明 |
-|---|---|
-| `map` | 常驻地图 ID |
-| `world` | 常驻地图世界名 |
 
 ```yaml
 enter_outpost:
@@ -80,9 +81,18 @@ enter_outpost:
         amount: 1
 ```
 
+配置说明：
+
+| 条件 | 说明 |
+|---|---|
+| `map` | 常驻地图 ID |
+| `world` | 常驻地图世界名 |
+
 ## `inoriloot persistent leave`
 
 玩家离开常驻地图时计数。
+
+配置说明：
 
 | 条件 | 说明 |
 |---|---|
