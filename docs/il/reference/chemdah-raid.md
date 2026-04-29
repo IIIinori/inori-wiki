@@ -23,7 +23,6 @@ enter_factory:
 | 条件 | 说明 |
 |---|---|
 | `game` | Raid 地图 ID |
-| `session` | 对局 ID |
 | `world` | 对局世界名 |
 
 ## `inoriloot raid extract`
@@ -49,7 +48,6 @@ daily_extract_factory:
 | 条件 | 说明 |
 |---|---|
 | `game` | Raid 地图 ID |
-| `session` | 对局 ID |
 
 ## `inoriloot raid end`
 
@@ -60,7 +58,6 @@ daily_extract_factory:
 | 条件 | 说明 |
 |---|---|
 | `game` | Raid 地图 ID |
-| `session` | 对局 ID |
 | `reason` | 结束原因文本 |
 
 ## `inoriloot persistent enter`

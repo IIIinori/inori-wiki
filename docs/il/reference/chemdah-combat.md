@@ -27,7 +27,6 @@ kill_scav:
 | `scope` | `raid` 或 `persistent` |
 | `game` | Raid 地图 ID |
 | `map` | 常驻地图 ID |
-| `session` | 对局或常驻 session ID |
 | `spawner` | 刷怪点 ID |
 | `mob` | 怪物 ID |
 | `backend` | 刷怪后端，例如 `mythic` |
@@ -59,7 +58,6 @@ defeat_factory_boss:
 | `scope` | `raid` 或 `persistent` |
 | `game` | Raid 地图 ID |
 | `map` | 常驻地图 ID |
-| `session` | 对局或常驻 session ID |
 | `spawner` | 刷怪点 ID |
 | `mob` | 怪物 ID |
 | `backend` | 刷怪后端 |
@@ -89,7 +87,6 @@ start_generator:
 | 条件 | 说明 |
 |---|---|
 | `game` | Raid 地图 ID |
-| `session` | 对局 ID |
 | `objective` | 地图目标 ID |
 | `type` | 目标类型，例如 `generator`、`terminal`、`submit`、`defense` |
 | `flag` | 完成 flag |

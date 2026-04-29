@@ -24,7 +24,6 @@ find_medkit:
 |---|---|
 | `type` | 外部网格类型，例如 `raid_loot_container`、`persistent_loot_container` |
 | `scope` | `raid` 或 `persistent` |
-| `session` | 对局或常驻 session ID |
 | `container` | 容器 ID |
 | `target` | 容器 ID 别名 |
 | `slot` | 物品所在槽位 |
@@ -61,7 +60,6 @@ open_weapon_crates:
 | `scope` | `raid` 或 `persistent` |
 | `game` | Raid 地图 ID |
 | `map` | 常驻地图 ID |
-| `session` | 对局或常驻 session ID |
 | `container` | 容器 ID |
 | `target` | 容器 ID 别名 |
 | `type` | 容器类型 |
@@ -96,7 +94,6 @@ bringout_medkit:
 | `scope` | `raid` 或 `persistent` |
 | `game` | Raid 地图 ID |
 | `map` | 常驻地图 ID |
-| `session` | 对局或常驻 session ID |
 | `loot` | InoriLoot 物品 ID |
 | `key` | InoriLoot 钥匙 ID |
 | `rarity` | 品质 ID |
@@ -132,7 +129,6 @@ high_value_extract:
 | `scope` | `raid` 或 `persistent` |
 | `game` | Raid 地图 ID |
 | `map` | 常驻地图 ID |
-| `session` | 对局或常驻 session ID |
 | `value` | 总价值 |
 | `stacks` | 带出格数 |
 | `units` | 带出物品总数量 |
