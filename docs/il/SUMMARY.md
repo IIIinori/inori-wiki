@@ -32,4 +32,4 @@
 * [命令](reference/commands.md)
 * [Kether](reference/conditions.md)
 * [PlaceholderAPI](reference/placeholders.md)
-* [开发者 API](reference/api.md)
+* [API](reference/api.md)
