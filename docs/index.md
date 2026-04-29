@@ -16,3 +16,11 @@ features:
     link: /ils/
     linkText: 进入 InoriLootShop 文档
 ---
+
+## 插件获取
+
+插件获取、使用交流和问题反馈可加入群聊：
+
+```text
+1042944055
+```
