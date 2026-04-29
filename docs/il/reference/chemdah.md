@@ -419,13 +419,3 @@ agent:
 | `all` | 查询或扣除时表示背包 + 仓库 + 保险箱；发放时表示尝试找到一个可完整接收奖励的位置 |
 
 
-## 注意事项
-
-| 项目 | 说明 |
-|---|---|
-| 任务配置位置 | 任务本体仍写在 Chemdah 的任务配置目录中 |
-| 物品识别 | `loot` 和 `key` 使用 InoriLoot 物品/钥匙 ID |
-| 价值统计 | 价值来自 InoriLoot 物品配置或物品价值标签 |
-| 常驻地图 | 使用 `scope: persistent` 和 `map: <地图ID>` 过滤 |
-| Raid 地图 | 使用 `scope: raid` 和 `game: <地图ID>` 过滤 |
-| 空投容器 | 可以通过 `inoriloot container open` 的 `airdrop: true` 过滤 |
