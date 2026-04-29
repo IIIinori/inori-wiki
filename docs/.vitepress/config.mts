@@ -10,14 +10,6 @@ export default defineConfig({
     nav: [],
     sidebar: [
       {
-        text: '导航',
-        items: [
-          { text: 'Home', link: '/' },
-          { text: 'InoriLoot', link: '/il/' },
-          { text: 'InoriLootShop', link: '/ils/' },
-        ]
-      },
-      {
         text: 'InoriLoot',
         collapsed: false,
         items: [
