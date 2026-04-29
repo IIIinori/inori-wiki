@@ -12,6 +12,8 @@ InoriLoot 的进入条件和撤离条件使用 Kether 表达式。
 | `team-has-item "intel"` | 队伍中任一在线成员持有指定物品 |
 | `flag "power_on"` | 指定 flag 已激活 |
 | `defeated "boss_01"` | 指定刷怪点已被击败 |
+| `battle-value 1000` | 玩家战备价值达到 1000 |
+| `carry-value 500` | 玩家当前携带价值达到 500 |
 | `not <条件>` | 条件取反 |
 | `all [ ... ]` | 全部条件满足 |
 | `any [ ... ]` | 任意条件满足 |
@@ -22,5 +24,7 @@ InoriLoot 的进入条件和撤离条件使用 Kether 表达式。
 condition: 'has-key "office_key"'
 condition: 'all [ flag "power_on" has-key "office_key" ]'
 condition: 'any [ team-has-key "vip_pass" team-has-item "intel" ]'
+condition: 'battle-value 1000'
+condition: 'carry-value 500'
 condition: 'not has-item "contraband"'
 ```
