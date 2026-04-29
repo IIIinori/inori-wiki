@@ -23,7 +23,6 @@ enter_factory:
 | 条件 | 说明 |
 |---|---|
 | `game` | Raid 地图 ID |
-| `world` | 对局世界名 |
 
 ## `inoriloot raid extract`
 
@@ -53,12 +52,25 @@ daily_extract_factory:
 
 玩家参与的 Raid 结束。
 
+```yaml
+raid_end_factory:
+  meta:
+    name: 工厂战局结束
+    type: daily
+  task:
+    end:
+      objective: inoriloot raid end
+      condition:
+        game: factory
+      goal:
+        amount: 1
+```
+
 配置说明：
 
 | 条件 | 说明 |
 |---|---|
 | `game` | Raid 地图 ID |
-| `reason` | 结束原因文本 |
 
 ## `inoriloot persistent enter`
 
@@ -83,15 +95,27 @@ enter_outpost:
 | 条件 | 说明 |
 |---|---|
 | `map` | 常驻地图 ID |
-| `world` | 常驻地图世界名 |
 
 ## `inoriloot persistent leave`
 
 玩家离开常驻地图。
+
+```yaml
+leave_outpost:
+  meta:
+    name: 离开哨站
+    type: daily
+  task:
+    leave:
+      objective: inoriloot persistent leave
+      condition:
+        map: outpost
+      goal:
+        amount: 1
+```
 
 配置说明：
 
 | 条件 | 说明 |
 |---|---|
 | `map` | 常驻地图 ID |
-| `world` | 常驻地图世界名 |

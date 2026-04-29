@@ -22,16 +22,7 @@ find_medkit:
 
 | 条件 | 说明 |
 |---|---|
-| `type` | 外部网格类型，例如 `raid_loot_container`、`persistent_loot_container` |
-| `scope` | `raid` 或 `persistent` |
-| `container` | 容器 ID |
-| `target` | 容器 ID 别名 |
-| `slot` | 物品所在槽位 |
 | `loot` | InoriLoot 物品 ID |
-| `key` | InoriLoot 钥匙 ID |
-| `rarity` | 物品品质 ID |
-| `amount` | 本堆数量 |
-| `value` | 本堆价值 |
 
 ## `inoriloot container open`
 
@@ -59,13 +50,7 @@ open_weapon_crates:
 |---|---|
 | `scope` | `raid` 或 `persistent` |
 | `game` | Raid 地图 ID |
-| `map` | 常驻地图 ID |
-| `container` | 容器 ID |
-| `target` | 容器 ID 别名 |
 | `type` | 容器类型 |
-| `pool` | 掉落池 ID |
-| `key` | 所需钥匙 ID |
-| `airdrop` | 是否为空投容器，`true` 或 `false` |
 
 ## `inoriloot bringout item`
 
@@ -93,14 +78,7 @@ bringout_medkit:
 |---|---|
 | `scope` | `raid` 或 `persistent` |
 | `game` | Raid 地图 ID |
-| `map` | 常驻地图 ID |
 | `loot` | InoriLoot 物品 ID |
-| `key` | InoriLoot 钥匙 ID |
-| `rarity` | 品质 ID |
-| `amount` | 本堆数量 |
-| `value` | 本堆价值 |
-| `min-value` | 本堆最低价值 |
-| `max-value` | 本堆最高价值 |
 
 ## `inoriloot bringout value`
 
@@ -128,9 +106,4 @@ high_value_extract:
 |---|---|
 | `scope` | `raid` 或 `persistent` |
 | `game` | Raid 地图 ID |
-| `map` | 常驻地图 ID |
-| `value` | 总价值 |
-| `stacks` | 带出格数 |
-| `units` | 带出物品总数量 |
 | `min-value` | 最低总价值 |
-| `max-value` | 最高总价值 |

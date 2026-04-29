@@ -26,11 +26,7 @@ kill_scav:
 |---|---|
 | `scope` | `raid` 或 `persistent` |
 | `game` | Raid 地图 ID |
-| `map` | 常驻地图 ID |
-| `spawner` | 刷怪点 ID |
 | `mob` | 怪物 ID |
-| `backend` | 刷怪后端，例如 `mythic` |
-| `mode` | 刷怪模式，例如 `once`、`repeating` |
 
 ## `inoriloot spawner defeat`
 
@@ -55,13 +51,8 @@ defeat_factory_boss:
 
 | 条件 | 说明 |
 |---|---|
-| `scope` | `raid` 或 `persistent` |
 | `game` | Raid 地图 ID |
-| `map` | 常驻地图 ID |
 | `spawner` | 刷怪点 ID |
-| `mob` | 怪物 ID |
-| `backend` | 刷怪后端 |
-| `mode` | 刷怪模式 |
 
 ## `inoriloot objective complete`
 
@@ -88,5 +79,3 @@ start_generator:
 |---|---|
 | `game` | Raid 地图 ID |
 | `objective` | 地图目标 ID |
-| `type` | 目标类型，例如 `generator`、`terminal`、`submit`、`defense` |
-| `flag` | 完成 flag |
