@@ -43,7 +43,18 @@ export default defineConfig({
           },
           { text: '命令', link: '/il/reference/commands' },
           { text: 'Kether', link: '/il/reference/conditions' },
-          { text: 'Chemdah 任务', link: '/il/reference/chemdah' },
+          {
+            text: 'Chemdah 任务',
+            collapsed: true,
+            items: [
+              { text: '概览', link: '/il/reference/chemdah' },
+              { text: 'Objective 总览', link: '/il/reference/chemdah-objectives' },
+              { text: '副本与常驻', link: '/il/reference/chemdah-raid' },
+              { text: '搜索与带出', link: '/il/reference/chemdah-loot' },
+              { text: '战斗与目标', link: '/il/reference/chemdah-combat' },
+              { text: '奖励脚本', link: '/il/reference/chemdah-rewards' },
+            ]
+          },
           { text: 'PlaceholderAPI', link: '/il/reference/placeholders' },
           { text: 'API', link: '/il/reference/api' },
         ]
