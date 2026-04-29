@@ -1,20 +1,5 @@
 # Chemdah 任务接入
 
-InoriLoot 可以在检测到 Chemdah 时自动注册任务目标。服主可以使用 Chemdah 的任务、对话、追踪与奖励系统来制作 InoriLoot 的每日任务、主线任务、收集任务和击杀任务。
-
-## 启用方式
-
-服务器需要安装 Chemdah，并在 InoriLoot 配置中保持 Hook 开启：
-
-```yaml
-hooks:
-  chemdah:
-    enabled: true
-    debug: false
-```
-
-未安装 Chemdah 时，InoriLoot 会跳过任务 Hook，不影响插件本体功能。
-
 ## Objective 列表
 
 | Objective | 说明 |
