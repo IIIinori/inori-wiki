@@ -2,7 +2,7 @@
 
 ## `inoriloot raid start`
 
-玩家进入 Raid 对局时计数。
+玩家进入 Raid 对局。
 
 ```yaml
 enter_factory:
@@ -27,7 +27,7 @@ enter_factory:
 
 ## `inoriloot raid extract`
 
-玩家成功撤离时计数。
+玩家成功撤离。
 
 ```yaml
 daily_extract_factory:
@@ -51,7 +51,7 @@ daily_extract_factory:
 
 ## `inoriloot raid end`
 
-玩家参与的 Raid 结束时计数。
+玩家参与的 Raid 结束。
 
 配置说明：
 
@@ -62,7 +62,7 @@ daily_extract_factory:
 
 ## `inoriloot persistent enter`
 
-玩家进入常驻地图时计数。
+玩家进入常驻地图。
 
 ```yaml
 enter_outpost:
@@ -87,7 +87,7 @@ enter_outpost:
 
 ## `inoriloot persistent leave`
 
-玩家离开常驻地图时计数。
+玩家离开常驻地图。
 
 配置说明：
 

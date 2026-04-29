@@ -35,7 +35,7 @@ find_medkit:
 
 ## `inoriloot container open`
 
-玩家打开战利品容器时计数。
+玩家打开战利品容器。
 
 ```yaml
 open_weapon_crates:

@@ -2,7 +2,7 @@
 
 ## `inoriloot mob kill`
 
-玩家击杀 InoriLoot 刷怪点产生的实体时计数。Raid 和常驻地图都支持。
+玩家击杀 InoriLoot 刷怪点产生的实体。Raid 和常驻地图都支持。
 
 ```yaml
 kill_scav:
@@ -34,7 +34,7 @@ kill_scav:
 
 ## `inoriloot spawner defeat`
 
-一次性刷怪点被完全清空时计数，适合 Boss 或精英事件任务。
+一次性刷怪点被完全清空，适合 Boss 或精英事件任务。
 
 ```yaml
 defeat_factory_boss:
@@ -65,7 +65,7 @@ defeat_factory_boss:
 
 ## `inoriloot objective complete`
 
-玩家完成地图机关目标时计数。
+玩家完成地图机关目标。
 
 ```yaml
 start_generator:
