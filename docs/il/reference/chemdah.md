@@ -418,26 +418,6 @@ agent:
 | `safebox` | InoriLoot 保险箱 |
 | `all` | 查询或扣除时表示背包 + 仓库 + 保险箱；发放时表示尝试找到一个可完整接收奖励的位置 |
 
-## 诊断命令
-
-如果 Chemdah 任务没有正常涨进度，或奖励脚本没有生效，可以先用管理命令排查。
-
-| 命令 | 说明 |
-|---|---|
-| `/ila chemdah status` | 查看 Chemdah Hook 配置、插件状态、Objective 注册状态 |
-| `/ila chemdah objectives` | 列出 InoriLoot 注册的 Chemdah Objective |
-| `/ila chemdah actions` | 列出 InoriLoot 注册的 shared Kether 动作 |
-| `/ila chemdah reload` | 重新尝试注册 Chemdah Objective |
-
-示例：
-
-```text
-/ila chemdah status
-/ila chemdah objectives
-/ila chemdah actions
-/ila chemdah reload
-```
-
 
 ## 注意事项
 
