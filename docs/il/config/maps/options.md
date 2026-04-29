@@ -17,6 +17,10 @@ players:
   target: 1
   max: 1
 
+entry:
+  condition: 'battle-value 1000'
+  message: '&c你的战备价值不足。'
+
 spawns:
   - location: "0.5, 65, 0.5, 0, 0"
 ```
@@ -32,7 +36,27 @@ spawns:
 | `players.min` | 最小开局人数 |
 | `players.target` | 目标人数 |
 | `players.max` | 最大人数 |
+| `entry.condition` | 进入副本的 Kether 条件 |
+| `entry.message` | 条件不满足时的提示 |
 | `spawns` | 出生点列表 |
+
+## 进入条件
+
+`entry.condition` 用于限制玩家是否可以进入副本。
+
+```yaml
+entry:
+  condition: 'battle-value 1000'
+  message: '&c你的战备价值不足。'
+```
+
+常用条件：
+
+```yaml
+entry:
+  condition: 'all [ battle-value 1000 has-key "office_key" ]'
+  message: '&c你不满足进入条件。'
+```
 
 ## 常驻示例
 
