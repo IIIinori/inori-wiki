@@ -1,0 +1,83 @@
+<svg width="960" height="360" viewBox="0 0 960 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Inori Wiki Logo</title>
+  <desc id="desc">Full Inori series wiki logo with a glowing pixel diamond, open book mark, and Inori wordmark.</desc>
+  <defs>
+    <linearGradient id="markBg" x1="64" y1="42" x2="318" y2="312" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171A3A"/>
+      <stop offset="0.48" stop-color="#2B1A5E"/>
+      <stop offset="1" stop-color="#0E2447"/>
+    </linearGradient>
+    <linearGradient id="gem" x1="118" y1="82" x2="275" y2="273" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BDEBFF"/>
+      <stop offset="0.46" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#5EEAD4"/>
+    </linearGradient>
+    <linearGradient id="page" x1="105" y1="192" x2="286" y2="283" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#C7D2FE"/>
+    </linearGradient>
+    <linearGradient id="word" x1="388" y1="98" x2="802" y2="225" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.5" stop-color="#C4B5FD"/>
+      <stop offset="1" stop-color="#67E8F9"/>
+    </linearGradient>
+    <linearGradient id="line" x1="384" y1="260" x2="800" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="0.55" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#5EEAD4"/>
+    </linearGradient>
+    <filter id="glow" x="58" y="38" width="286" height="294" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="14" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.49 0 0 0 0 0.37 0 0 0 0 1 0 0 0 0.62 0"/>
+      <feBlend in2="BackgroundImageFix" mode="screen" result="effect"/>
+      <feBlend in="SourceGraphic" in2="effect" result="shape"/>
+    </filter>
+    <filter id="shadow" x="36" y="34" width="308" height="300" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="16" flood-color="#020617" flood-opacity="0.28"/>
+    </filter>
+    <filter id="textGlow" x="350" y="52" width="550" height="250" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#7C3AED" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="360" fill="transparent"/>
+
+  <g filter="url(#shadow)">
+    <rect x="48" y="48" width="264" height="264" rx="64" fill="url(#markBg)"/>
+    <rect x="50" y="50" width="260" height="260" rx="62" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="4"/>
+
+    <g opacity="0.58">
+      <rect x="78" y="106" width="18" height="18" rx="5" fill="#A78BFA"/>
+      <rect x="276" y="122" width="16" height="16" rx="4" fill="#5EEAD4"/>
+      <rect x="252" y="252" width="20" height="20" rx="6" fill="#93C5FD"/>
+      <rect x="84" y="258" width="15" height="15" rx="4" fill="#F0ABFC"/>
+    </g>
+
+    <path d="M180 72L282 174L180 276L78 174L180 72Z" fill="#111827" fill-opacity="0.52"/>
+    <path d="M180 86L268 174L180 262L92 174L180 86Z" fill="url(#gem)" filter="url(#glow)"/>
+    <path d="M180 86V262L92 174L180 86Z" fill="#FFFFFF" fill-opacity="0.14"/>
+    <path d="M180 86L268 174H92L180 86Z" fill="#FFFFFF" fill-opacity="0.17"/>
+    <path d="M135 174L180 86L225 174L180 262L135 174Z" fill="#111827" fill-opacity="0.16"/>
+    <path d="M92 174H268" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linecap="round"/>
+    <path d="M180 86V262" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6" stroke-linecap="round"/>
+
+    <path d="M82 222C110 201 147 202 174 226V304C147 282 110 279 82 299V222Z" fill="url(#page)"/>
+    <path d="M278 222C250 201 213 202 186 226V304C213 282 250 279 278 299V222Z" fill="url(#page)"/>
+    <path d="M174 226C178 230 180 234 180 239C181 234 182 230 186 226V304C183 307 181 311 180 316C178 311 177 307 174 304V226Z" fill="#8B5CF6"/>
+    <path d="M100 240C120 231 143 233 160 248" stroke="#6D5BD0" stroke-opacity="0.52" stroke-width="6" stroke-linecap="round"/>
+    <path d="M260 240C240 231 217 233 200 248" stroke="#2563EB" stroke-opacity="0.48" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#textGlow)">
+    <text x="372" y="175" fill="url(#word)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="104" font-weight="800" letter-spacing="-4">Inori</text>
+    <text x="379" y="232" fill="#A5B4FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="8">WIKI SERIES</text>
+    <rect x="382" y="254" width="420" height="8" rx="4" fill="url(#line)"/>
+  </g>
+
+  <g opacity="0.8">
+    <rect x="820" y="96" width="28" height="28" rx="7" fill="#A78BFA" fill-opacity="0.75"/>
+    <rect x="864" y="132" width="18" height="18" rx="5" fill="#5EEAD4" fill-opacity="0.8"/>
+    <rect x="808" y="216" width="20" height="20" rx="6" fill="#60A5FA" fill-opacity="0.72"/>
+  </g>
+</svg>

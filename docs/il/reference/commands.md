@@ -42,6 +42,10 @@
 | `/ila stop {对局ID}` | 强制结束对局 |
 | `/ila profile stashunlock {玩家} {等级}` | 设置仓库解锁等级 |
 | `/ila profile safeboxunlock {玩家} {等级}` | 设置保险箱解锁等级 |
+| `/ila chemdah status` | 查看 Chemdah Hook 状态 |
+| `/ila chemdah objectives` | 列出 InoriLoot 注册的 Chemdah Objective |
+| `/ila chemdah actions` | 列出 InoriLoot 注册的 shared Kether 动作 |
+| `/ila chemdah reload` | 重新尝试注册 Chemdah Objective |
 | `/ila persistent reload` | 重载全部常驻地图 |
 | `/ila persistent reload {地图ID}` | 重载指定常驻地图 |
 | `/ila persistent load {地图ID}` | 加载指定常驻地图 live 世界 |

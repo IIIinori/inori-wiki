@@ -5,6 +5,9 @@ hero:
   name: Inori Wiki
   text: Inori 系列插件文档入口
   tagline: 插件获取 / 使用交流 / 问题反馈群：1042944055
+  image:
+    src: /inori-logo.svg
+    alt: Inori Wiki Logo
 
 features:
   - title: InoriLoot

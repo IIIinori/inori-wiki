@@ -7,6 +7,7 @@ export default defineConfig({
   base: '/inori-wiki/',
   cleanUrls: true,
   themeConfig: {
+    logo: '/inori-mark.svg',
     nav: [],
     sidebar: [
       {
@@ -42,6 +43,7 @@ export default defineConfig({
           },
           { text: '命令', link: '/il/reference/commands' },
           { text: 'Kether', link: '/il/reference/conditions' },
+          { text: 'Chemdah 任务', link: '/il/reference/chemdah' },
           { text: 'PlaceholderAPI', link: '/il/reference/placeholders' },
           { text: 'API', link: '/il/reference/api' },
         ]
