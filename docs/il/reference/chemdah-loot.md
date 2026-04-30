@@ -17,19 +17,6 @@ find_medkit:
         loot: medkit
       goal:
         amount: 3
-
-find_office_key:
-  meta:
-    name: 搜索办公室钥匙
-    type: daily
-  task:
-    search:
-      objective: inoriloot loot search
-      condition:
-        scope: raid
-        key: office_key
-      goal:
-        amount: 1
 ```
 
 配置说明：
@@ -58,20 +45,6 @@ open_weapon_box:
         container: weapon_box
       goal:
         amount: 1
-
-open_outpost_cache:
-  meta:
-    name: 搜索哨站补给箱
-    type: daily
-  task:
-    open:
-      objective: inoriloot container open
-      condition:
-        scope: persistent
-        map: outpost
-        type: cache
-      goal:
-        amount: 3
 ```
 
 配置说明：
@@ -102,20 +75,6 @@ bringout_medkit:
         loot: medkit
       goal:
         amount: 3
-
-bringout_office_key:
-  meta:
-    name: 钥匙回收
-    type: daily
-  task:
-    item:
-      objective: inoriloot bringout item
-      condition:
-        scope: persistent
-        map: outpost
-        key: office_key
-      goal:
-        amount: 1
 ```
 
 配置说明：
@@ -146,20 +105,6 @@ high_value_extract:
         min-value: 10000
       goal:
         amount: 10000
-
-outpost_supply_value:
-  meta:
-    name: 哨站物资价值
-    type: weekly
-  task:
-    value:
-      objective: inoriloot bringout value
-      condition:
-        scope: persistent
-        map: outpost
-        min-value: 3000
-      goal:
-        amount: 3000
 ```
 
 配置说明：

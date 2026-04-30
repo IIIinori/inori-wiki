@@ -18,20 +18,6 @@ kill_scav:
         mob: scav
       goal:
         amount: 20
-
-kill_outpost_guard:
-  meta:
-    name: 清理哨站守卫
-    type: daily
-  task:
-    kill:
-      objective: inoriloot mob kill
-      condition:
-        scope: persistent
-        map: outpost
-        mob: guard
-      goal:
-        amount: 10
 ```
 
 配置说明：
@@ -59,20 +45,6 @@ defeat_factory_boss:
         scope: raid
         game: factory
         spawner: factory_boss
-      goal:
-        amount: 1
-
-defeat_outpost_elite:
-  meta:
-    name: 清除哨站精英点
-    type: main
-  task:
-    boss:
-      objective: inoriloot spawner defeat
-      condition:
-        scope: persistent
-        map: outpost
-        spawner: outpost_elite
       goal:
         amount: 1
 ```
