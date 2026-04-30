@@ -71,7 +71,22 @@ start_generator:
     objective:
       objective: inoriloot objective complete
       condition:
+        scope: raid
         game: factory
+        objective: generator_a
+      goal:
+        amount: 1
+
+start_outpost_generator:
+  meta:
+    name: 启动哨站电源
+    type: main
+  task:
+    objective:
+      objective: inoriloot objective complete
+      condition:
+        scope: persistent
+        map: outpost
         objective: generator_a
       goal:
         amount: 1
@@ -81,5 +96,7 @@ start_generator:
 
 | 条件 | 说明 |
 |---|---|
+| `scope` | `raid` 或 `persistent` |
 | `game` | Raid 地图 ID |
+| `map` | 常驻地图 ID |
 | `objective` | 地图目标 ID |
