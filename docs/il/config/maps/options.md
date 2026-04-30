@@ -18,7 +18,7 @@ players:
   max: 1
 
 entry:
-  condition: 'battle-value 1000'
+  condition: 'il-battle-value 1000'
   message: '&c你的战备价值不足。'
 
 spawns:
@@ -46,7 +46,7 @@ spawns:
 
 ```yaml
 entry:
-  condition: 'battle-value 1000'
+  condition: 'il-battle-value 1000'
   message: '&c你的战备价值不足。'
 ```
 
@@ -54,7 +54,7 @@ entry:
 
 ```yaml
 entry:
-  condition: 'all [ battle-value 1000 has-key "office_key" ]'
+  condition: 'all [ il-battle-value 1000 il-has-key "office_key" ]'
   message: '&c你不满足进入条件。'
 ```
 

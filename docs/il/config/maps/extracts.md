@@ -12,7 +12,7 @@ extracts:
     warmup: 8
     countdown: 0
     locked: false
-    condition: 'all [ flag "power_on" has-key "office_key" ]'
+    condition: 'all [ il-flag "power_on" il-has-key "office_key" ]'
     uses: 1
 ```
 

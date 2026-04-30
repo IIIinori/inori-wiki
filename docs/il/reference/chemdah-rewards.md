@@ -55,6 +55,10 @@ agent:
 | `il-give-pool` | `il-give-pool "medical_pool" rolls 2 to stash` | 是否成功发放 |
 | `il-has-item` | `il-has-item "intel" from all` | 玩家是否持有物品 |
 | `il-has-key` | `il-has-key "office_key" from stash` | 玩家是否持有钥匙 |
+| `il-team-has-item` | `il-team-has-item "intel"` | 队伍中任一在线成员是否持有物品 |
+| `il-team-has-key` | `il-team-has-key "office_key"` | 队伍中任一在线成员是否持有钥匙 |
+| `il-flag` | `il-flag "power_on"` | 地图目标 flag 是否已激活 |
+| `il-defeated` | `il-defeated "boss_01"` | 刷怪点是否已清空 |
 | `il-take-item` | `il-take-item "intel" amount 1 from all` | 是否成功扣除 |
 | `il-take-key` | `il-take-key "office_key" amount 1 from stash` | 是否成功扣除 |
 | `il-count-item` | `il-count-item "medkit" from all` | 指定来源内物品数量 |
