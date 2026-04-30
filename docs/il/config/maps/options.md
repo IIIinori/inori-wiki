@@ -54,7 +54,7 @@ entry:
 
 ```yaml
 entry:
-  condition: 'all [ il-battle-value 1000 il-has-key "office_key" ]'
+  condition: 'il-has-key "office_key"'
   message: '&c你不满足进入条件。'
 ```
 
