@@ -14,6 +14,7 @@ enter_factory:
       objective: inoriloot raid start
       condition:
         game: factory
+        world: factory_live_01
       goal:
         amount: 1
 ```
@@ -23,6 +24,7 @@ enter_factory:
 | 条件 | 说明 |
 |---|---|
 | `game` | Raid 地图 ID |
+| `world` | 对局世界名 |
 
 ## `inoriloot raid extract`
 
@@ -62,6 +64,7 @@ raid_end_factory:
       objective: inoriloot raid end
       condition:
         game: factory
+        reason: timeout
       goal:
         amount: 1
 ```
@@ -71,6 +74,7 @@ raid_end_factory:
 | 条件 | 说明 |
 |---|---|
 | `game` | Raid 地图 ID |
+| `reason` | 结束原因文本 |
 
 ## `inoriloot persistent enter`
 
@@ -86,6 +90,7 @@ enter_outpost:
       objective: inoriloot persistent enter
       condition:
         map: outpost
+        world: outpost_live
       goal:
         amount: 1
 ```
@@ -95,6 +100,7 @@ enter_outpost:
 | 条件 | 说明 |
 |---|---|
 | `map` | 常驻地图 ID |
+| `world` | 常驻地图世界名 |
 
 ## `inoriloot persistent leave`
 
@@ -110,6 +116,7 @@ leave_outpost:
       objective: inoriloot persistent leave
       condition:
         map: outpost
+        world: outpost_live
       goal:
         amount: 1
 ```
@@ -119,3 +126,4 @@ leave_outpost:
 | 条件 | 说明 |
 |---|---|
 | `map` | 常驻地图 ID |
+| `world` | 常驻地图世界名 |
