@@ -5,9 +5,9 @@
 玩家搜索出一个战利品物品堆时触发。计数值为该物品堆数量，例如搜出 `medkit x3` 会增加 3 进度。
 
 ```yaml
-find_medkit:
+find_loot:
   meta:
-    name: 医疗物资回收
+    name: 搜索战利品
     type: daily
   task:
     search:
@@ -15,6 +15,7 @@ find_medkit:
       condition:
         scope: raid
         loot: medkit
+        key: office_key
       goal:
         amount: 3
 ```
@@ -32,9 +33,9 @@ find_medkit:
 玩家打开战利品容器。
 
 ```yaml
-open_weapon_box:
+open_container:
   meta:
-    name: 搜索指定军火箱
+    name: 搜索容器
     type: daily
   task:
     open:
@@ -42,7 +43,9 @@ open_weapon_box:
       condition:
         scope: raid
         game: factory
+        map: outpost
         container: weapon_box
+        type: weapon_rack
       goal:
         amount: 1
 ```
@@ -62,9 +65,9 @@ open_weapon_box:
 玩家成功从 Raid 撤离或离开常驻地图时，对携带物品逐堆统计。计数值为物品堆数量。
 
 ```yaml
-bringout_medkit:
+bringout_item:
   meta:
-    name: 医疗物资带出
+    name: 物资带出
     type: daily
   task:
     item:
@@ -72,7 +75,9 @@ bringout_medkit:
       condition:
         scope: raid
         game: factory
+        map: outpost
         loot: medkit
+        key: office_key
       goal:
         amount: 3
 ```
@@ -92,9 +97,9 @@ bringout_medkit:
 玩家成功从 Raid 撤离或离开常驻地图时，按本次携带物资总价值计数。
 
 ```yaml
-high_value_extract:
+bringout_value:
   meta:
-    name: 高价值撤离
+    name: 物资价值带出
     type: weekly
   task:
     value:
@@ -102,6 +107,7 @@ high_value_extract:
       condition:
         scope: raid
         game: lab
+        map: outpost
         min-value: 10000
       goal:
         amount: 10000

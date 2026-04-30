@@ -5,9 +5,9 @@
 玩家击杀 InoriLoot 刷怪点产生的实体。Raid 和常驻地图都支持。
 
 ```yaml
-kill_scav:
+kill_mob:
   meta:
-    name: 清理游荡者
+    name: 清理敌人
     type: daily
   task:
     kill:
@@ -15,6 +15,7 @@ kill_scav:
       condition:
         scope: raid
         game: factory
+        map: outpost
         mob: scav
       goal:
         amount: 20
@@ -34,9 +35,9 @@ kill_scav:
 一次性刷怪点被完全清空，适合 Boss 或精英事件任务。
 
 ```yaml
-defeat_factory_boss:
+defeat_spawner:
   meta:
-    name: 清除工厂主管
+    name: 清除据点
     type: main
   task:
     boss:
@@ -44,6 +45,7 @@ defeat_factory_boss:
       condition:
         scope: raid
         game: factory
+        map: outpost
         spawner: factory_boss
       goal:
         amount: 1
@@ -63,9 +65,9 @@ defeat_factory_boss:
 玩家完成地图机关目标。
 
 ```yaml
-start_generator:
+complete_objective:
   meta:
-    name: 启动备用电源
+    name: 完成地图目标
     type: main
   task:
     objective:
@@ -73,19 +75,6 @@ start_generator:
       condition:
         scope: raid
         game: factory
-        objective: generator_a
-      goal:
-        amount: 1
-
-start_outpost_generator:
-  meta:
-    name: 启动哨站电源
-    type: main
-  task:
-    objective:
-      objective: inoriloot objective complete
-      condition:
-        scope: persistent
         map: outpost
         objective: generator_a
       goal:
