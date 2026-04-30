@@ -15,10 +15,7 @@ kill_scav:
       condition:
         scope: raid
         game: factory
-        spawner: factory_scav
         mob: scav
-        backend: mythic
-        mode: repeating
       goal:
         amount: 20
 
@@ -32,10 +29,7 @@ kill_outpost_guard:
       condition:
         scope: persistent
         map: outpost
-        spawner: outpost_guard
         mob: guard
-        backend: mythic
-        mode: repeating
       goal:
         amount: 10
 ```
@@ -47,10 +41,7 @@ kill_outpost_guard:
 | `scope` | `raid` 或 `persistent` |
 | `game` | Raid 地图 ID |
 | `map` | 常驻地图 ID |
-| `spawner` | 刷怪点 ID |
 | `mob` | 怪物 ID |
-| `backend` | 刷怪后端，例如 `mythic` |
-| `mode` | 刷怪模式，例如 `once`、`repeating` |
 
 ## `inoriloot spawner defeat`
 
@@ -68,9 +59,6 @@ defeat_factory_boss:
         scope: raid
         game: factory
         spawner: factory_boss
-        mob: factory_chief
-        backend: mythic
-        mode: once
       goal:
         amount: 1
 
@@ -85,9 +73,6 @@ defeat_outpost_elite:
         scope: persistent
         map: outpost
         spawner: outpost_elite
-        mob: elite_guard
-        backend: mythic
-        mode: once
       goal:
         amount: 1
 ```
@@ -100,9 +85,6 @@ defeat_outpost_elite:
 | `game` | Raid 地图 ID |
 | `map` | 常驻地图 ID |
 | `spawner` | 刷怪点 ID |
-| `mob` | 怪物 ID |
-| `backend` | 刷怪后端 |
-| `mode` | 刷怪模式 |
 
 ## `inoriloot objective complete`
 
@@ -119,8 +101,6 @@ start_generator:
       condition:
         game: factory
         objective: generator_a
-        type: generator
-        flag: power_on
       goal:
         amount: 1
 ```
@@ -131,5 +111,3 @@ start_generator:
 |---|---|
 | `game` | Raid 地图 ID |
 | `objective` | 地图目标 ID |
-| `type` | 目标类型，例如 `generator`、`terminal`、`submit`、`defense` |
-| `flag` | 完成 flag |
