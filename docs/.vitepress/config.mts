@@ -49,7 +49,6 @@ export default defineConfig({
               { text: '副本与常驻', link: '/il/reference/chemdah-raid' },
               { text: '搜索与带出', link: '/il/reference/chemdah-loot' },
               { text: '战斗与目标', link: '/il/reference/chemdah-combat' },
-              { text: '奖励脚本', link: '/il/reference/chemdah-rewards' },
             ]
           },
           { text: '命令', link: '/il/reference/commands' },
