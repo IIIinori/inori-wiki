@@ -45,7 +45,6 @@ open_container:
         game: factory
         map: outpost
         container: weapon_box
-        type: weapon_rack
       goal:
         amount: 1
 ```
@@ -58,7 +57,6 @@ open_container:
 | `game` | Raid 地图 ID |
 | `map` | 常驻地图 ID |
 | `container` | 容器 ID |
-| `type` | 容器类型 |
 
 ## `inoriloot bringout item`
 
