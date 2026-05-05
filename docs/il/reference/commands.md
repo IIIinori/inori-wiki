@@ -19,6 +19,7 @@
 | `/il persistent leave` | 离开常驻地图 |
 | `/il stash` | 打开仓库 |
 | `/il safebox` | 打开保险箱 |
+| `/il keybox` | 打开钥匙箱 |
 
 ## 队伍命令
 
@@ -42,6 +43,7 @@
 | `/ila stop {对局ID}` | 强制结束对局 |
 | `/ila profile stashunlock {玩家} {等级}` | 设置仓库解锁等级 |
 | `/ila profile safeboxunlock {玩家} {等级}` | 设置保险箱解锁等级 |
+| `/ila profile safeboxunlocktemp {玩家} {等级} {秒数}` | 设置保险箱临时解锁等级（到期自动失效） |
 | `/ila persistent reload` | 重载全部常驻地图 |
 | `/ila persistent reload {地图ID}` | 重载指定常驻地图 |
 | `/ila persistent load {地图ID}` | 加载指定常驻地图 live 世界 |

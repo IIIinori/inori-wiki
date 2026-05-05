@@ -26,6 +26,7 @@ scrap:
 | `name` | 显示名 |
 | `lore` | 描述 |
 | `key` | 钥匙 ID |
+| `key-durability` | 钥匙耐久（用于容器/空投/钥匙房消耗） |
 
 ## NBT 标记
 
@@ -48,6 +49,7 @@ office_key:
   search: 4
   size: "1x2"
   key: "slums_office_key"
+  key-durability: 5
   name: "&6办公室钥匙"
 ```
 

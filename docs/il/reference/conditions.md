@@ -42,3 +42,17 @@ agent:
 
 `to` 支持：`inventory`、`stash`、`safebox`、`all`。
 
+## 解锁动作
+
+```yaml
+agent:
+  completed: |-
+    il-stash-unlock 3
+    il-safebox-unlock-temp 2 seconds 1800
+```
+
+| 动作 | 说明 |
+|------|------|
+| `il-stash-unlock <level>` | 设置仓库永久解锁等级 |
+| `il-safebox-unlock-temp <level> seconds <sec>` | 设置保险箱临时解锁等级（持续指定秒数） |
+| `il-safebox-unlock-clear` | 清除当前玩家保险箱临时解锁 |

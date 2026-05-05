@@ -15,10 +15,8 @@ airdrops:
     size: 27
     title: "Military Airdrop"
     points:
-      north:
-        location: "80.5, 66, 120.5"
-      south:
-        location: "20.5, 66, 220.5"
+      - location: "80.5, 66, 120.5"
+      - location: "20.5, 66, 220.5"
 ```
 
 | 字段 | 说明 |
@@ -29,4 +27,4 @@ airdrops:
 | `despawn` | 解锁后存在时间 |
 | `type` | 空投容器类型 |
 | `pool` | 掉落池 ID |
-| `points` | 可选落点 |
+| `points` | 落点列表（`- location: "x, y, z"`） |
