@@ -31,6 +31,7 @@ export default defineConfig({
             items: [
               { text: '地图概览', link: '/il/config/maps/overview' },
               { text: 'options.yml', link: '/il/config/maps/options' },
+              { text: 'key-room.yml', link: '/il/config/maps/key-room' },
               { text: 'extracts.yml', link: '/il/config/maps/extracts' },
               { text: 'containers.yml', link: '/il/config/maps/containers' },
               { text: 'airdrops.yml', link: '/il/config/maps/airdrops' },

@@ -14,6 +14,7 @@ InoriLoot 有两类地图。
 ```text
 raid/games/slums/
 ├── options.yml
+├── key-room.yml
 ├── extracts.yml
 ├── containers.yml
 ├── airdrops.yml
@@ -28,6 +29,7 @@ raid/games/slums/
 ```text
 persistent/games/outpost/
 ├── options.yml
+├── key-room.yml
 ├── extracts.yml
 ├── containers.yml
 ├── airdrops.yml
