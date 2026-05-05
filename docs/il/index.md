@@ -68,11 +68,14 @@ raid/
 ├── world/slums/
 └── games/slums/
     ├── options.yml
+    ├── key-room.yml
     ├── extracts.yml
     ├── containers.yml
+    ├── airdrops.yml
     ├── ground-loot.yml
     ├── mobs.yml
-    └── objectives.yml
+    ├── objectives.yml
+    └── npc.yml
 ```
 
 `options.yml`：

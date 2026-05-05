@@ -34,6 +34,8 @@
 | `il-stash-unlock <level>` | 设置仓库永久解锁等级 |
 | `il-safebox-unlock-temp <level> [seconds <sec>]` | 设置保险箱临时解锁等级 |
 | `il-safebox-unlock-clear` | 清除保险箱临时解锁 |
+| `il-keybox-unlock-temp <level> [seconds <sec>]` | 设置钥匙箱临时解锁等级 |
+| `il-keybox-unlock-clear` | 清除钥匙箱临时解锁 |
 
 ## 示例
 
@@ -48,4 +50,5 @@ agent:
     il-take-item "intel" amount 1 to all
     il-stash-unlock 3
     il-safebox-unlock-temp 2 seconds 1800
+    il-keybox-unlock-temp 1 seconds 600
 ```

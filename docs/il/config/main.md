@@ -105,6 +105,8 @@ loot:
       - "&8品质: {0}"
     value:
       - "&8价值: &6{0}"
+    key-durability:
+      - "&8耐久: &f{0}&8/&f{1}"
   types:
     crate:
       name: "补给木箱"
@@ -117,7 +119,7 @@ loot:
 | 节点 | 说明 |
 |------|------|
 | `rarities` | 稀有度显示名 |
-| `item-lore` | 物品品质和价值 Lore 模板 |
+| `item-lore` | 物品 Lore 模板（品质、价值、钥匙耐久） |
 | `types` | 搜索容器类型 |
 
 ## raid

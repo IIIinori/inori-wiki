@@ -44,6 +44,8 @@
 | `/ila profile stashunlock {玩家} {等级}` | 设置仓库解锁等级 |
 | `/ila profile safeboxunlock {玩家} {等级}` | 设置保险箱解锁等级 |
 | `/ila profile safeboxunlocktemp {玩家} {等级} {秒数}` | 设置保险箱临时解锁等级（到期自动失效） |
+| `/ila profile keyboxunlock {玩家} {等级}` | 设置钥匙箱解锁等级 |
+| `/ila profile keyboxunlocktemp {玩家} {等级} {秒数}` | 设置钥匙箱临时解锁等级（到期自动失效） |
 | `/ila persistent reload` | 重载全部常驻地图 |
 | `/ila persistent reload {地图ID}` | 重载指定常驻地图 |
 | `/ila persistent load {地图ID}` | 加载指定常驻地图 live 世界 |
