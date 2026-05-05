@@ -1,7 +1,5 @@
 # Kether 公有动作
 
-InoriLoot 把以下动作注册为 **Kether 公有动作（shared action）**，可在 InoriLoot、Chemdah 等脚本环境直接调用。
-
 ## 条件与查询
 
 | 动作 | 说明 |
