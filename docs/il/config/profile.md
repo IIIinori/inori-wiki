@@ -10,10 +10,9 @@ stash:
   unlock:
     default: 27
     steps:
-      - 9
-      - 18
-      - 27
-      - 27
+      - 36
+      - 45
+      - 54
   enabled: true
   title: "仓库"
   raid: false
@@ -70,8 +69,8 @@ keybox:
 | 字段 | 说明 |
 |------|------|
 | `size` | 钥匙箱总格数 |
-| `unlock.default` | 默认解锁格数（int） |
-| `unlock.steps` | 每级额外解锁格数（int 列表） |
+| `unlock.default` | 默认解锁格数 |
+| `unlock.steps` | 每级额外解锁格数 |
 | `enabled` | 是否启用钥匙箱 |
 | `title` | 钥匙箱标题 |
 | `raid` | 是否允许 Raid 中打开 |
