@@ -14,6 +14,6 @@ key-consume: 1
 |------|------|
 | `pos1` | 清障区域角点 1 |
 | `pos2` | 清障区域角点 2 |
-| `interact` | 交互坐标（发包 marker 展示点） |
+| `interact` | 交互坐标 |
 | `key` | 交互所需钥匙 ID |
 | `key-consume` | 每次交互消耗的钥匙耐久 |
