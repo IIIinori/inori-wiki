@@ -14,6 +14,8 @@ airdrops:
     pool: military_high
     size: 27
     title: "Military Airdrop"
+    key: slums_airdrop_key
+    key-consume: 2
     points:
       - location: "80.5, 66, 120.5"
       - location: "20.5, 66, 220.5"
@@ -27,4 +29,6 @@ airdrops:
 | `despawn` | 解锁后存在时间 |
 | `type` | 空投容器类型 |
 | `pool` | 掉落池 ID |
+| `key` | 开启空投所需钥匙 ID，可选 |
+| `key-consume` | 每次开启消耗的钥匙耐久，默认 `1` |
 | `points` | 落点列表（`- location: "x, y, z"`） |

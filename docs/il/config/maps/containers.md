@@ -11,6 +11,7 @@ containers:
     size: 27
     title: "补给箱"
     key: slums_office_key
+    key-consume: 1
 ```
 
 | 字段 | 说明 |
@@ -21,3 +22,4 @@ containers:
 | `size` | 容器 GUI 格数 |
 | `title` | 容器标题 |
 | `key` | 打开所需钥匙 ID，可选 |
+| `key-consume` | 每次开启消耗的钥匙耐久，默认 `1` |

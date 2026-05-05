@@ -1,58 +1,53 @@
-# Kether 条件
+# Kether 公有动作
 
-InoriLoot 的进入条件和撤离条件使用 Kether 表达式。
+InoriLoot 把以下动作注册为 **Kether 公有动作（shared action）**，可在 InoriLoot、Chemdah 等脚本环境直接调用。
 
-## 基础语法
+## 条件与查询
 
-| 语法 | 说明 |
+| 动作 | 说明 |
 |------|------|
-| `il-has-key "office_key"` | 玩家持有指定钥匙 |
-| `il-has-item "intel"` | 玩家持有指定物品 |
-| `il-team-has-key "office_key"` | 队伍中任一在线成员持有指定钥匙 |
-| `il-team-has-item "intel"` | 队伍中任一在线成员持有指定物品 |
-| `il-flag "power_on"` | 指定 flag 已激活 |
-| `il-defeated "boss_01"` | 指定刷怪点已被击败 |
-| `il-battle-value 1000` | 玩家战备价值达到 1000 |
-| `il-carry-value 500` | 玩家当前携带价值达到 500 |
-| `il-count-item "medkit" to all` | 返回指定位置的物品数量 |
-| `il-count-key "office_key" to safebox` | 返回指定位置的钥匙数量 |
+| `il-has-item "<itemId>" [to <target>]` | 是否拥有指定物品 |
+| `il-has-key "<keyId>" [to <target>]` | 是否拥有指定钥匙 |
+| `il-team-has-item "<itemId>" [to <target>]` | 队伍任一在线成员是否拥有物品 |
+| `il-team-has-key "<keyId>" [to <target>]` | 队伍任一在线成员是否拥有钥匙 |
+| `il-count-item "<itemId>" [to <target>]` | 统计物品数量 |
+| `il-count-key "<keyId>" [to <target>]` | 统计钥匙数量 |
+| `il-battle-value [min]` | 战备价值（带参数时按阈值判断） |
+| `il-carry-value [min]` | 当前携带价值（带参数时按阈值判断） |
+| `il-flag "<flagId>"` | 当前副本中目标 flag 是否激活 |
+| `il-defeated "<spawnerId>"` | 当前副本中刷怪点是否已击败 |
 
-## 示例
+`to` 目标支持：`inventory`、`stash`、`safebox`、`all`。
 
-```yaml
-condition: 'il-has-key "office_key"'
-condition: 'il-battle-value 1000'
-condition: 'il-carry-value 500'
-condition: 'il-has-key "office_key" to all'
-```
+## 物品与钥匙发放/扣除
 
-## 通用奖励动作
+| 动作 | 说明 |
+|------|------|
+| `il-give-item "<itemId>" [amount <n>] [to <target>]` | 发放物品 |
+| `il-give-key "<keyId>" [amount <n>] [to <target>]` | 发放钥匙 |
+| `il-give-pool "<poolId>" [rolls <n>] [to <target>]` | 按掉落池发放 |
+| `il-take-item "<itemId>" [amount <n>] [to <target>]` | 扣除物品 |
+| `il-take-key "<keyId>" [amount <n>] [to <target>]` | 扣除钥匙 |
 
-以下动作注册为 Kether shared action，Chemdah 等插件也可以解析。
-
-```yaml
-agent:
-  completed: |-
-    il-give-item "medkit" amount 3 to stash
-    il-give-key "office_key" amount 1 to safebox
-    il-give-pool "medical_pool" rolls 2 to inventory
-    il-take-item "intel" amount 1 to all
-    il-take-key "office_key" amount 1 to stash
-```
-
-`to` 支持：`inventory`、`stash`、`safebox`、`all`。
-
-## 解锁动作
-
-```yaml
-agent:
-  completed: |-
-    il-stash-unlock 3
-    il-safebox-unlock-temp 2 seconds 1800
-```
+## 解锁相关
 
 | 动作 | 说明 |
 |------|------|
 | `il-stash-unlock <level>` | 设置仓库永久解锁等级 |
-| `il-safebox-unlock-temp <level> seconds <sec>` | 设置保险箱临时解锁等级（持续指定秒数） |
-| `il-safebox-unlock-clear` | 清除当前玩家保险箱临时解锁 |
+| `il-safebox-unlock-temp <level> [seconds <sec>]` | 设置保险箱临时解锁等级 |
+| `il-safebox-unlock-clear` | 清除保险箱临时解锁 |
+
+## 示例
+
+```yaml
+condition: 'il-has-key "office_key" to inventory'
+condition: 'il-battle-value 1000'
+
+agent:
+  completed: |-
+    il-give-item "medkit" amount 3 to stash
+    il-give-key "office_key" amount 1 to safebox
+    il-take-item "intel" amount 1 to all
+    il-stash-unlock 3
+    il-safebox-unlock-temp 2 seconds 1800
+```
