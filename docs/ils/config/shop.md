@@ -1,10 +1,6 @@
 # 商店配置
 
-商店文件放在：
-
-```text
-plugins/InoriLootShop/shops/
-```
+目录：`plugins/InoriLootShop/shops/`
 
 ## 顶层字段
 

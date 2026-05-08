@@ -1,10 +1,6 @@
 # 交易行配置
 
-文件：
-
-```text
-plugins/InoriLootShop/market.yml
-```
+文件：`plugins/InoriLootShop/market.yml`
 
 ## 自定义货币
 
@@ -13,7 +9,7 @@ currency:
   coin: '&e哈夫币'
 ```
 
-每个 key 都是一个自定义货币 ID。
+每个键名都是一个自定义货币 ID。
 
 自动注册 PlaceholderAPI：
 
@@ -50,6 +46,12 @@ fee:
   listing-fee-return-on-sold: false
 ```
 
+| 字段 | 说明 |
+|------|------|
+| `tax-rate` | 成交税率 |
+| `listing-fee-rate` | 上架手续费率 |
+| `listing-fee-return-on-sold` | 成交后是否返还上架手续费 |
+
 ## 系统回收
 
 ```yml
@@ -65,6 +67,15 @@ quick-sell:
     key: []
 ```
 
+| 字段 | 说明 |
+|------|------|
+| `enabled` | 是否开启系统回收 |
+| `multiplier` | 回收系数（基于参考价） |
+| `allow.loot` | 是否允许回收普通物品 |
+| `allow.key` | 是否允许回收钥匙 |
+| `deny.loot` | 禁止回收的物品 ID 列表 |
+| `deny.key` | 禁止回收的钥匙 ID 列表 |
+
 ## 可交易设置
 
 ```yml
@@ -74,3 +85,9 @@ tradeable:
     loot: []
     key: []
 ```
+
+| 字段 | 说明 |
+|------|------|
+| `default` | 默认是否可交易 |
+| `deny.loot` | 不可交易的物品 ID 列表 |
+| `deny.key` | 不可交易的钥匙 ID 列表 |

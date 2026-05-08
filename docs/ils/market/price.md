@@ -64,6 +64,22 @@ price:
     random-weight: 0.60
 ```
 
+| 字段 | 说明 |
+|------|------|
+| `price.min` | 最低参考价 |
+| `price.max` | 最高参考价 |
+| `price.buckets` | 价格分桶数量 |
+| `price.dynamic.enabled` | 是否启用动态价值 |
+| `price.dynamic.update-days` | 更新周期（天） |
+| `price.dynamic.history-window-hours` | 历史统计窗口（小时） |
+| `price.dynamic.random-range` | 随机波动范围 |
+| `price.dynamic.max-step` | 单次最大变化比例 |
+| `price.dynamic.min-multiplier` | 最低倍率 |
+| `price.dynamic.max-multiplier` | 最高倍率 |
+| `price.dynamic.history-weight` | 历史价格权重 |
+| `price.dynamic.listing-weight` | 当前挂单权重 |
+| `price.dynamic.random-weight` | 随机因子权重 |
+
 动态价值只影响新上架参考、价格统计和 quick-sell 估值。旧挂单价格不会被刷新影响。
 
 交易行 GUI 会显示当前动态价值、上期价值和涨跌百分比。

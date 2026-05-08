@@ -13,11 +13,13 @@ InoriLootShop 是 InoriLoot 的商店与交易行附属插件。
 
 ## 安装步骤
 
-1. 将插件 jar 放入服务器 `plugins` 目录。
-2. 确认已安装 InoriLoot。
-3. 启动服务器生成默认配置。
-4. 修改 `config.yml`、`market.yml` 和 `shops/*.yml`。
-5. 使用 `/ils reload` 重载配置。
+| 步骤 | 说明 |
+|------|------|
+| 1 | 将插件 jar 放入服务器 `plugins/` 目录 |
+| 2 | 确认已安装 InoriLoot |
+| 3 | 启动服务器生成默认配置 |
+| 4 | 修改 `config.yml`、`market.yml` 和 `shops/*.yml` |
+| 5 | 使用 `/ils reload` 重载配置 |
 
 ## 默认文件
 

@@ -1,12 +1,8 @@
 # 主配置
 
-文件：
+文件：`plugins/InoriLootShop/config.yml`
 
-```text
-plugins/InoriLootShop/config.yml
-```
-
-示例：
+## 示例
 
 ```yml
 debug: false
@@ -24,5 +20,5 @@ database:
 | 字段 | 说明 |
 |------|------|
 | `debug` | 调试模式 |
-| `database.mode` | 数据库模式，支持 `sqlite` / `mysql` |
+| `database.mode` | 数据库模式：`sqlite` 或 `mysql` |
 | `database.mysql.*` | MySQL 连接信息 |

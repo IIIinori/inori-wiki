@@ -32,7 +32,7 @@ buy: loot:scrap*3 -> playerpoints:10
 | `vault:<金额>` | 扣除 Vault 金币 |
 | `playerpoints:<数量>` | 扣除 PlayerPoints |
 
-`loot` 和 `key` 会检测并扣除：背包、副手、盔甲栏、stash。不检测 safebox。
+`loot` 和 `key` 会检测并扣除：背包、副手、盔甲栏、stash。不会检测 safebox。
 
 ## 奖励类型
 

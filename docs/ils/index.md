@@ -1,18 +1,20 @@
 # 快速开始
 
-## 1. 打开默认商店
+## 最小流程
+
+```text
+打开商店 → 配置一个图标交易 → 测试交易行 → 检查余额与收益
+```
+
+## 打开默认商店
 
 ```text
 /ils open simple
 ```
 
-默认商店文件：
+默认商店文件：`plugins/InoriLootShop/shops/simple.yml`
 
-```text
-plugins/InoriLootShop/shops/simple.yml
-```
-
-## 2. 最小商店配置
+## 第一个商店配置
 
 ```yml
 title: '&8简单商店'
@@ -39,7 +41,7 @@ icons:
     buy: loot:scrap*3 -> loot:bandage*5
 ```
 
-## 3. 交易行
+## 交易行测试
 
 打开交易行：
 
@@ -59,7 +61,7 @@ icons:
 /ils market claim
 ```
 
-## 4. 余额
+## 余额命令
 
 查看余额：
 

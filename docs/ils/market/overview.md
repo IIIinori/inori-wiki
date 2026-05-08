@@ -10,7 +10,7 @@
 
 ## 上架物品
 
-玩家手持 InoriLoot 物品：
+玩家手持 InoriLoot 物品执行：
 
 ```text
 /ils market sell <price> [amount]
