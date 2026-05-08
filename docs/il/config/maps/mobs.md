@@ -20,7 +20,6 @@ mobs:
 
 | 字段 | 说明 |
 |------|------|
-| `type` | 怪物后端，通常为 `mythic` |
 | `mob` | 怪物 ID |
 | `display` | 显示名 |
 | `location` | 刷怪位置 |
