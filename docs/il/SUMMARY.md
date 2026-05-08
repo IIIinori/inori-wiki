@@ -18,8 +18,8 @@
 
 * [地图概览](config/maps/overview.md)
 * [options.yml](config/maps/options.md)
-* [extracts.yml](config/maps/extracts.md)
 * [key-room.yml](config/maps/key-room.md)
+* [extracts.yml](config/maps/extracts.md)
 * [containers.yml](config/maps/containers.md)
 * [airdrops.yml](config/maps/airdrops.md)
 * [ground-loot.yml](config/maps/ground-loot.md)

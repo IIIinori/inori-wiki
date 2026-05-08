@@ -5,11 +5,10 @@
 ```yaml
 containers:
   crate_01:
-    type: crate
+    type: med_box
     location: "90, 65, 180"
     pool: scav_common
     size: 27
-    title: "补给箱"
     key: slums_office_key
     key-consume: 1
 ```
@@ -20,6 +19,5 @@ containers:
 | `location` | 容器位置 |
 | `pool` | 掉落池 ID |
 | `size` | 容器 GUI 格数 |
-| `title` | 容器标题 |
 | `key` | 打开所需钥匙 ID，可选 |
 | `key-consume` | 每次开启消耗的钥匙耐久，默认 `1` |

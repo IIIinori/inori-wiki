@@ -5,15 +5,13 @@
 ```yaml
 airdrops:
   military_drop:
-    display: "军用空投"
     announce: 300
     travel: 45
     unlock: 20
     despawn: 360
-    type: airdrop
+    type: med_box
     pool: military_high
     size: 27
-    title: "Military Airdrop"
     key: slums_airdrop_key
     key-consume: 2
     points:
