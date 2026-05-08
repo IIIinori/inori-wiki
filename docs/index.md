@@ -18,4 +18,8 @@ features:
     details: InoriLoot 的商店与交易行附属插件，提供 GUI 商店、玩家交易行、动态价值、自定义货币。
     link: /ils/
     linkText: 进入 InoriLootShop 文档
+  - title: InoriGuild
+    details: 公会创建与管理、职位权限、公会关系、公会战、仓库、GUI、PlaceholderAPI。
+    link: /ig/
+    linkText: 进入 InoriGuild 文档
 ---

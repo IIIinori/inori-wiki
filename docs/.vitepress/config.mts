@@ -73,6 +73,23 @@ export default defineConfig({
           { text: '指令', link: '/ils/reference/commands' },
           { text: 'PlaceholderAPI', link: '/ils/reference/placeholders' },
         ]
+      },
+      {
+        text: 'InoriGuild',
+        collapsed: true,
+        items: [
+          { text: '快速开始', link: '/ig/' },
+          { text: '主配置', link: '/ig/config/main' },
+          { text: '等级与 Buff', link: '/ig/config/levels' },
+          { text: '职位与权限', link: '/ig/config/roles' },
+          { text: '消息配置', link: '/ig/config/messages' },
+          { text: '公会关系', link: '/ig/gameplay/relation' },
+          { text: '公会战', link: '/ig/gameplay/war' },
+          { text: '指令', link: '/ig/reference/commands' },
+          { text: '权限节点', link: '/ig/reference/permissions' },
+          { text: 'PlaceholderAPI', link: '/ig/reference/placeholders' },
+          { text: 'API', link: '/ig/reference/api' },
+        ]
       }
     ],
     socialLinks: [],
