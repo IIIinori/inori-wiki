@@ -2,7 +2,6 @@
 
 ## 开始
 
-- [安装](start/install.md)
 - [快速开始](start/quickstart.md)
 
 ## 配置
