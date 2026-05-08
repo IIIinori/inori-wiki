@@ -15,7 +15,6 @@ mobs:
     alive: 1
     count: 1
     pool: scav_common
-    rolls: 3
 ```
 
 | 字段 | 说明 |
@@ -29,4 +28,3 @@ mobs:
 | `alive` | 最大存活数 |
 | `count` | 每次生成数量 |
 | `pool` | 击败奖励池 |
-| `rolls` | 奖励抽取次数 |

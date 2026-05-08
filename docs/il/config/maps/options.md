@@ -33,16 +33,16 @@ spawns:
 | `world` | 模板世界目录名 |
 | `duration` | Raid 对局时长，单位秒 |
 | `last` | 最后撤离阶段阈值，单位秒 |
-| `players.min` | 最小开局人数 |
-| `players.target` | 目标人数 |
-| `players.max` | 最大人数 |
-| `entry.condition` | 进入副本的 Kether 条件 |
-| `entry.message` | 条件不满足时的提示 |
+| `min` | 最小开局人数 |
+| `target` | 目标人数 |
+| `max` | 最大人数 |
+| `condition` | 进入副本的 Kether 条件 |
+| `message` | 条件不满足时的提示 |
 | `spawns` | 出生点列表 |
 
 ## 进入条件
 
-`entry.condition` 用于限制玩家是否可以进入副本。
+`condition` 用于限制玩家是否可以进入副本。
 
 ```yaml
 entry:

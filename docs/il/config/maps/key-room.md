@@ -14,8 +14,8 @@ key-rooms:
 
 | 字段 | 说明 |
 |------|------|
-| `key-rooms.<id>.pos1` | 清障区域角点 1 |
-| `key-rooms.<id>.pos2` | 清障区域角点 2 |
-| `key-rooms.<id>.interact` | 交互坐标 |
-| `key-rooms.<id>.key` | 交互所需钥匙 ID |
-| `key-rooms.<id>.key-consume` | 每次交互消耗的钥匙耐久 |
+| `pos1` | 清障区域角点 1 |
+| `pos2` | 清障区域角点 2 |
+| `interact` | 交互坐标 |
+| `key` | 交互所需钥匙 ID |
+| `key-consume` | 每次交互消耗的钥匙耐久 |
