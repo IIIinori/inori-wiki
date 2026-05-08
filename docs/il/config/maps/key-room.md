@@ -10,12 +10,6 @@ key-rooms:
     interact: "122.5, 65, 212.5, 0, 0"
     key: slums_gate_key
     key-consume: 1
-  room_b:
-    pos1: "220, 64, 310"
-    pos2: "224, 68, 314"
-    interact: "222.5, 65, 312.5, 0, 0"
-    key: lab_key
-    key-consume: 2
 ```
 
 | 字段 | 说明 |
