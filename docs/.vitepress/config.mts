@@ -62,7 +62,7 @@ export default defineConfig({
         text: 'InoriLootShop',
         collapsed: true,
         items: [
-          { text: '快速开始', link: '/ils/start/quickstart' },
+          { text: '快速开始', link: '/ils/' },
           { text: '主配置', link: '/ils/config/main' },
           { text: '商店配置', link: '/ils/config/shop' },
           { text: '交易表达式', link: '/ils/config/trade' },
