@@ -63,7 +63,6 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '快速开始', link: '/ils/' },
-          { text: '安装', link: '/ils/start/install' },
           { text: '主配置', link: '/ils/config/main' },
           { text: '商店配置', link: '/ils/config/shop' },
           { text: '交易表达式', link: '/ils/config/trade' },
