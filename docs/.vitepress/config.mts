@@ -82,7 +82,6 @@ export default defineConfig({
           { text: '主配置', link: '/ig/config/main' },
           { text: '等级与 Buff', link: '/ig/config/levels' },
           { text: '职位与权限', link: '/ig/config/roles' },
-          { text: '消息配置', link: '/ig/config/messages' },
           { text: '公会关系', link: '/ig/gameplay/relation' },
           { text: '公会战', link: '/ig/gameplay/war' },
           { text: '公会任务', link: '/ig/gameplay/tasks' },

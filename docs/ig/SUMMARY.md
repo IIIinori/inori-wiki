@@ -16,7 +16,6 @@
 - [主配置](config/main.md)
 - [等级与 Buff](config/levels.md)
 - [职位与权限](config/roles.md)
-- [消息配置](config/messages.md)
 
 ## 参考
 
