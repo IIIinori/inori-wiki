@@ -58,18 +58,3 @@
 | `inoriguild.admin.resetcooldown` |
 | `inoriguild.admin.user` |
 | `inoriguild.admin.task` |
-
-## 公会内部权限（roles.yml）
-
-这些权限不走 Bukkit 权限插件分配，而是由玩家在公会里的职位决定：
-
-```text
-invite, kick, promote, demote, leader,
-settag, desc, notice, sethome, applications,
-broadcast, chat, home, sign, donate,
-relation, relation.set, relation.set.ally, relation.set.enemy, relation.set.neutral,
-relation.bypass-cooldown, war,
-bank.open, bank.deposit, bank.withdraw, bank.manage,
-mail.view, mail.send,
-task.claim
-```
