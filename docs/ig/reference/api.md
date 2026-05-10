@@ -1,7 +1,5 @@
 # API
 
-InoriGuild 在 Bukkit `ServicesManager` 中注册 `InoriGuildAPI`，其他插件可直接获取并调用。
-
 ## 获取 API
 
 ```java
