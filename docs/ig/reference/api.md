@@ -64,12 +64,3 @@ if (provider != null) {
 | `GuildLevelUpEvent` | 否 | `guild`, `oldLevel`, `newLevel` |
 | `GuildContributionChangeEvent` | 否 | `guild`, `member`, `amount`, `reason` |
 | `GuildTaskCompleteEvent` | 否 | `guild`, `taskId`, `templateId` |
-
-## 写操作返回
-
-`addGuildExp`、`addGuildFund`、`addContribution` 返回 `GuildOperationResult`：
-
-| 字段 | 说明 |
-|------|------|
-| `isSuccess()` | 是否成功 |
-| `getMessage()` | 结果消息键（如 `admin-done`、`guild-not-found`） |
