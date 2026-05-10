@@ -50,8 +50,6 @@ if (provider != null) {
 
 ## API 事件（`inori.inoriguild.api.event`）
 
-所有对外事件统一在此包下，参数为只读视图对象（`GuildView` / `GuildMemberView` 等）。
-
 | 事件 | 可取消 | 字段 |
 |------|--------|------|
 | `GuildCreateEvent` | 是 | `guild`, `creator` |
