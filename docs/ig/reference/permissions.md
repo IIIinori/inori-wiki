@@ -36,6 +36,8 @@
 | `inoriguild.command.home` | `true` |
 | `inoriguild.command.sign` | `true` |
 | `inoriguild.command.donate` | `true` |
+| `inoriguild.command.mail` | `true` |
+| `inoriguild.command.task` | `true` |
 | `inoriguild.command.top` | `true` |
 
 ## 管理权限
@@ -55,6 +57,7 @@
 | `inoriguild.admin.setrole` |
 | `inoriguild.admin.resetcooldown` |
 | `inoriguild.admin.user` |
+| `inoriguild.admin.task` |
 
 ## 公会内部权限（roles.yml）
 
@@ -66,6 +69,7 @@ settag, desc, notice, sethome, applications,
 broadcast, chat, home, sign, donate,
 relation, relation.set, relation.set.ally, relation.set.enemy, relation.set.neutral,
 relation.bypass-cooldown, war,
-bank.open, bank.deposit, bank.withdraw, bank.manage
+bank.open, bank.deposit, bank.withdraw, bank.manage,
+mail.view, mail.send,
+task.claim
 ```
-

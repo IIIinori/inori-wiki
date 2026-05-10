@@ -57,6 +57,31 @@
 | `/ig donate <金额>` | `inoriguild.command.donate` | 捐献并转化贡献 |
 | `/ig bank` | `inoriguild.command.bank` | 打开公会仓库 |
 
+## 任务
+
+| 指令 | 权限节点 | 用途 |
+|------|----------|------|
+| `/ig task [list]` | `inoriguild.command.task` | 列出进行中的任务 |
+| `/ig task info <id>` | `inoriguild.command.task` | 查看任务详情与贡献榜 |
+| `/ig task claim <id>` | `inoriguild.command.task` | 领取任务奖励 |
+| `/ig task history [页码]` | `inoriguild.command.task` | 查看历史任务 |
+| `/ig task top [页码]` | `inoriguild.command.task` | 任务贡献排行 |
+
+> `<id>` 支持输入任务 ID 的前 8 位（短 ID），`/ig task list` 会显示。
+
+## 邮件
+
+| 指令 | 权限节点 | 用途 |
+|------|----------|------|
+| `/ig mail [list]` | `inoriguild.command.mail` | 列出公会邮件 |
+| `/ig mail read <id>` | `inoriguild.command.mail` | 查看邮件内容（自动标记已读） |
+| `/ig mail claim <id>` | `inoriguild.command.mail` | 领取附件 |
+| `/ig mail send <标题> <内容...>` | `inoriguild.command.mail` | 发送纯文本邮件 |
+| `/ig mail sendhand <标题> <内容...>` | `inoriguild.command.mail` | 发送邮件，主手物品作为附件 |
+| `/ig mail compose <标题> [内容...]` | `inoriguild.command.mail` | 打开草稿箱，放入附件后关闭即发送 |
+
+> 查看/发送分别受 `roles.yml` 的 `mail.view` / `mail.send` 控制。
+
 ## 关系与公会战
 
 | 指令 | 权限节点 | 用途 |
@@ -87,4 +112,5 @@
 | `/ig admin setrole <玩家> <职位>` | `inoriguild.admin.setrole` | 设置成员职位 |
 | `/ig admin resetcooldown <玩家>` | `inoriguild.admin.resetcooldown` | 重置公会家冷却 |
 | `/ig admin user <玩家>` | `inoriguild.admin.user` | 查询玩家公会状态 |
-
+| `/ig admin task refresh <公会> <daily/weekly/once/season>` | `inoriguild.admin.task` | 手动刷新任务 |
+| `/ig admin task list <公会>` | `inoriguild.admin.task` | 查看公会全部任务 |

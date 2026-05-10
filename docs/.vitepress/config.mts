@@ -85,6 +85,8 @@ export default defineConfig({
           { text: '消息配置', link: '/ig/config/messages' },
           { text: '公会关系', link: '/ig/gameplay/relation' },
           { text: '公会战', link: '/ig/gameplay/war' },
+          { text: '公会任务', link: '/ig/gameplay/tasks' },
+          { text: '公会邮件', link: '/ig/gameplay/mail' },
           { text: '指令', link: '/ig/reference/commands' },
           { text: '权限节点', link: '/ig/reference/permissions' },
           { text: 'PlaceholderAPI', link: '/ig/reference/placeholders' },

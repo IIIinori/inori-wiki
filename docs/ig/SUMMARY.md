@@ -8,6 +8,8 @@
 
 - [公会关系](gameplay/relation.md)
 - [公会战](gameplay/war.md)
+- [公会任务](gameplay/tasks.md)
+- [公会邮件](gameplay/mail.md)
 
 ## 配置
 
@@ -22,4 +24,3 @@
 - [权限节点](reference/permissions.md)
 - [PlaceholderAPI](reference/placeholders.md)
 - [API](reference/api.md)
-

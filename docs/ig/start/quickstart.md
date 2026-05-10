@@ -3,14 +3,14 @@
 ## 前置说明
 
 - 主命令：`/inoriguild`（别名：`/ig`）
-- 数据库：`sqlite`（默认）或 `mysql`
+- 数据库：`yaml`（默认）或 `mysql`
 - 经济来源：直接在 `config.yml` 中用 `vault:金额` / `playerpoints:金额` 配置
 
 ## 基础配置建议
 
 ```yml
 storage:
-  type: sqlite
+  type: yaml
 
 guild:
   create-cost: vault:1000
@@ -53,7 +53,17 @@ contribution:
 /ig top level
 ```
 
-### 5) 关系与公会战
+### 5) 任务与邮件
+
+```text
+/ig task list
+/ig task info <id>
+/ig task claim <id>
+/ig mail list
+/ig mail send 公告 欢迎加入公会
+```
+
+### 6) 关系与公会战
 
 ```text
 /ig relation enemy 对方公会
@@ -69,4 +79,5 @@ contribution:
 | 公会 Buff 不生效 | `levels.yml` 的 `level-buffs.enabled` 是否开启，且服务器是否安装 AttributePlus |
 | 关系/战局按钮灰色 | 当前角色是否具备对应公会内部权限（见 `roles.yml`） |
 | 区域保护不生效 | 服务器是否启用 WorldGuard，且是否已执行 `/ig admin region bind` |
-
+| 任务不刷新 | `tasks.yml` 中 `settings.daily-refresh` / `settings.weekly-refresh` 时间是否正确，模板是否在 `tasks/` 目录下 |
+| 邮件过期太快 / 太慢 | `config.yml` 的 `mail.expire-hours` 与 `mail.cleanup-interval-minutes` |

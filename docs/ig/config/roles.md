@@ -35,12 +35,14 @@
 | `home` | 使用公会家传送 |
 | `sign` | 每日签到 |
 | `donate` | 公会捐献 |
-| `relation*` | 关系系统（同盟/敌对/中立） |
+| `relation*` | 关系系统（同盟 / 敌对 / 中立） |
 | `war` | 公会战管理 |
 | `bank.open` | 打开仓库 |
 | `bank.deposit` | 存入仓库 |
 | `bank.withdraw` | 取出仓库 |
 | `bank.manage` | 仓库管理（覆盖 bank 子权限） |
+| `mail.view` | 查看邮件 |
+| `mail.send` | 发送邮件 |
+| `task.claim` | 领取公会任务奖励 |
 
 > 职位操作遵循权重比较：低权重不能操作同级和高权重。
-

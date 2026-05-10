@@ -22,6 +22,8 @@
 | 变量 | 说明 |
 |------|------|
 | `%inoriguild_contribution%` | 玩家贡献 |
+| `%inoriguild_sign_streak%` | 玩家当前连续签到天数 |
+| `%inoriguild_sign_total%` | 玩家累计签到次数 |
 | `%inoriguild_members%` | 当前成员数 |
 | `%inoriguild_max_members%` | 当前等级成员上限 |
 | `%inoriguild_exp%` | 公会经验 |
@@ -58,3 +60,15 @@
 | `%inoriguild_war_remaining%` | 当前战局剩余秒数 |
 | `%inoriguild_war_joined_count%` | 当前公会参战人数 |
 
+## 任务变量
+
+| 变量 | 说明 |
+|------|------|
+| `%inoriguild_task_daily_done%` | 日常已领取数量 |
+| `%inoriguild_task_daily_total%` | 日常总数（非过期） |
+| `%inoriguild_task_weekly_done%` | 周常已领取数量 |
+| `%inoriguild_task_weekly_total%` | 周常总数（非过期） |
+| `%inoriguild_task_weekly_progress%` | 周常整体进度百分比 |
+| `%inoriguild_task_my_contribution%` | 玩家在公会任务中的累计贡献 |
+| `%inoriguild_task_top_name%` | 当前公会任务贡献第一名 |
+| `%inoriguild_task_current_name%` | 玩家贡献最高的进行中任务名称 |
