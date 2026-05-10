@@ -127,12 +127,3 @@ kill-zombie:
 |------|------|
 | `/ig admin task refresh <公会> <daily/weekly/once/season>` | 手动刷新某公会某周期的任务 |
 | `/ig admin task list <公会>` | 查看公会全部任务 |
-
-## 常见排查
-
-| 现象 | 检查项 |
-|------|--------|
-| 任务不刷新 | `settings.daily-refresh` / `weekly-refresh` 格式，以及对应周期是否设置了 `*-count` |
-| 模板不加载 | 文件是否在 `tasks/` 下，子目录模板需要 `scan-subdirectories: true` |
-| 完成不发奖励 | 确认 `rewards.contribution-per-member / fund / exp` 是否大于 0，或 `auto-claim` 与 `/ig task claim` 是否被拦截 |
-| `MYTHIC_KILL` 不生效 | 服务器是否启用 MythicMobs，事件类路径是否被识别 |
