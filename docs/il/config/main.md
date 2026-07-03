@@ -1,4 +1,4 @@
-# 主配置
+###### 主配置
 
 文件：`plugins/InoriLoot/config.yml`
 
